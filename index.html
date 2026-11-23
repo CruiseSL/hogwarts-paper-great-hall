@@ -122,7 +122,23 @@
         font-size: 10px;
       }
     }
+    .project-files {
+      position: fixed;
+      top: clamp(14px, 3vw, 36px);
+      right: clamp(14px, 3vw, 36px);
+      z-index: 2;
+      display: flex;
+      gap: 1em;
+      background: #382e3cf2;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+    .project-files a { color: #f6ddb2; text-underline-offset: 3px; }
   </style>
+  <nav class="project-files" aria-label="项目资料">
+    <a href="hogwarts-papercraft-project.zip" download>下载项目</a>
+    <a href="prompts.txt" target="_blank" rel="noopener">制作提示词</a>
+  </nav>
   <header>
     <h1>霍格沃茨大礼堂</h1>
     <p id="place">中央过道</p>
